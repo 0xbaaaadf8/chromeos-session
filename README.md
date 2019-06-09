@@ -27,7 +27,7 @@ Additionally, this fork no longer downloads the lastest chromium builds; It down
 * Adobe Flash (But it's kicking the bucket in 2020, so...)
 * Widevine... No protected content for now.
 * Android apps (Missing container files)
-* Crostini (I'm considering making a replacement; see the "A crostini replacement?" section below for more details)
+* Crostini (I'm considering whether or not to make a replacement; see the "A crostini replacement?" section below for more details)
 * Crosh (but you can still have a shell via openSSH; see the "Get a shell with openSSH" section below for more details)
 
 ### Odd behavior
@@ -35,10 +35,9 @@ Additionally, this fork no longer downloads the lastest chromium builds; It down
 * If you resize the Chromium OS GUI window, the wallpaper will run amok. Applying a new wallpaper can help fix this.
 * Oddly enough, there were three more download folders in the default download folder, at least in my own virtual machine.
 
-
 ### A Crostini replacement?
 
-I'm considering forking the crouton project [https://github.com/dnschneid/crouton] and using the xiwi target to bring traditional GNU/Linux programs to the Chromium OS GUI.
+I'm considering about forking the crouton project [https://github.com/dnschneid/crouton] and using the xiwi target to bring traditional GNU/Linux programs to the Chromium OS GUI.
  
 ### Get a shell with openSSH 
 
