@@ -2,11 +2,11 @@
 
 Basically, this is lightdm-login-chromeos... reborn.
 
-## Warning - DO NOT use the lock function! Anybody can sign in, even if they don't know the password of PIN that you set! See the "What doesn't work" section of this README for more details.
-
 This project is a fork of a fork of the now-archived lightdm-login-chromeos project: [https://github.com/FrobtheBuilder/lightdm-login-chromeos]
 
 Additionally, this fork no longer downloads the lastest chromium builds; It downloads a stable-ish (probably beta) build.
+
+## Warning - DO NOT use the lock function! Anybody can sign in, even if they don't know the password of PIN that you set! See the "What doesn't work" section of this README for more details.
 
 ## What is working properly?
  
