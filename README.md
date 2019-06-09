@@ -10,34 +10,34 @@ Additionally, this fork no longer downloads the lastest chromium builds; It down
 
 ## What is working properly?
  
- * Hardware acceleration... I guess that's it.
+* Hardware acceleration... I guess that's it.
 
 ## What features aren't working properly?
 
- * Setting up the lock screen (Anybody can log in with a random password or PIN when you use the lock function; use "continue where you left off" and sign out instead!)
- * Accessing other disks (missing dbus service, mtp deamon)
- * Controlling sound volume, networks, and various other system-related stuff (again, missing dbus services, and fake data)
- * Booting directly to the Chromium OS GUI (outdated files)
- * Using the shutdown button or restarting from the Chromium OS GUI (It behaves just like the Sign Out button)
- * Using flags (it will appear enabled, but it won't acutally do a thing
- * Automatic Updates (Checking and updating feels smooth, but once you log out, it's still on the same Chromium version)
- * Dictation & Select to speak
- * Adobe Flash (But it's kicking the bucket in 2020, so...)
- * Widevine... No protected content for now.
- * Android apps (Missing container files)
- * Crostini (I'm considering making a replacement; see the "A crostini replacement?" section below for more details)
- * Crosh (but you can still have a shell via openSSH; see the "Get a shell with openSSH" section below for more details)
+* Setting up the lock screen (Anybody can log in with a random password or PIN when you use the lock function; use "continue where you left off" and sign out instead!)
+* Accessing other disks (missing dbus service, mtp deamon)
+* Controlling sound volume, networks, and various other system-related stuff (again, missing dbus services, and fake data)
+* Booting directly to the Chromium OS GUI (outdated files)
+* Using the shutdown button or restarting from the Chromium OS GUI (It behaves just like the Sign Out button)
+* Using flags (it will appear enabled, but it won't acutally do a thing
+* Automatic Updates (Checking and updating feels smooth, but once you log out, it's still on the same Chromium version)
+* Dictation & Select to speak
+* Adobe Flash (But it's kicking the bucket in 2020, so...)
+* Widevine... No protected content for now.
+* Android apps (Missing container files)
+* Crostini (I'm considering making a replacement; see the "A crostini replacement?" section below for more details)
+* Crosh (but you can still have a shell via openSSH; see the "Get a shell with openSSH" section below for more details)
  
 ## Deprecated stuff (for now)
 
- * Booting directly to Chromium OS (The grub and init files are seven years old, and unmaintained)
- * The chromeos-dm and chromeos-plain scripts
- * Plugins (Adobe Flash, Icedtea, Google Talk)
+* Booting directly to Chromium OS (The grub and init files are seven years old, and unmaintained)
+* The chromeos-dm and chromeos-plain scripts
+* Plugins (Adobe Flash, Icedtea, Google Talk)
 
 ### Odd behavior
 
- * If you resize the Chromium OS GUI window, the wallpaper will run amok. Applying a new wallpaper can help fix this.
- * Oddly enough, there were three more download folders in the default download folder, at least in my own virtual machine.
+* If you resize the Chromium OS GUI window, the wallpaper will run amok. Applying a new wallpaper can help fix this.
+* Oddly enough, there were three more download folders in the default download folder, at least in my own virtual machine.
 
 ### A Crostini replacement?
 
@@ -75,7 +75,7 @@ Also, you will not only generate the .deb package, but you will also build tar a
 ## A list of GNU/Linux distributions that were tested
 All distributions listed here are in amd64 variations.
 
- * Ubuntu MATE 19.04
+* Ubuntu MATE 19.04
  
 ## Why does the project only support the amd64 architecture?
 
