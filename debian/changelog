@@ -1,0 +1,147 @@
+chromeos-desktop (1.1ubnutu19) disco; urgency=medium
+
+  * I forked a fork!
+  * The Chromium OS browser can run with the sandbox now!
+  * This package now recommends the Robooto font.
+  * This package no longer depends on the internet to download the lastest Chromium version; The binaries are compressed in the built Debian package, for compatibility reasons.
+  * There is only one script to start the Chromium OS GUI, and it is now located in the "/usr/bin" directory.
+  * You can start Chromium OS through your Applications list!
+  * The OpenSSH Server package is now a recommended package; Install the Secure Shell App from the Chrome Web Store, and you can access a shell through the Chromium OS GUI.
+  * You won't see a login manager now; People without a Google API key can use the project.
+  
+ -- NoodleFork <noodlesoupandshell@gmail.com>  Sat, 09 Jun 2019 15:56:18 -0500
+
+lightdm-login-chromiumos (1.1ubuntu18) trusty; urgency=medium
+
+  * more thrashing
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 04:11:00 -0400
+
+lightdm-login-chromiumos (1.1ubuntu17) trusty; urgency=medium
+
+  * going back to see if I can fix things
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 03:53:26 -0400
+
+lightdm-login-chromiumos (1.1ubuntu16) trusty; urgency=medium
+
+  * doesn't like being run without suid sandbox
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 03:38:05 -0400
+
+lightdm-login-chromiumos (1.1ubuntu15) trusty; urgency=medium
+
+  * what about OTHER STUPID ERROR
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 03:28:32 -0400
+
+lightdm-login-chromiumos (1.1ubuntu14) trusty; urgency=medium
+
+  * I just wanted to save some bandwidth but apparently I'm way too bad at bash for that to work out:
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 03:25:55 -0400
+
+lightdm-login-chromiumos (1.1ubuntu13) trusty; urgency=medium
+
+  * man dh really likes to glom those makefiles
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 03:22:24 -0400
+
+lightdm-login-chromiumos (1.1ubuntu12) trusty; urgency=medium
+
+  * maybe now?
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 03:19:44 -0400
+
+lightdm-login-chromiumos (1.1ubuntu11) trusty; urgency=medium
+
+  * I can't fukin write bash scripts to save my life can I
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 03:16:33 -0400
+
+lightdm-login-chromiumos (1.1ubuntu10) trusty; urgency=medium
+
+  * single character error
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 03:13:42 -0400
+
+lightdm-login-chromiumos (1.1ubuntu9) trusty; urgency=medium
+
+  * ok fixed
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 03:12:30 -0400
+
+lightdm-login-chromiumos (1.1ubuntu8) trusty; urgency=medium
+
+  * adjusted postinstall script
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 03:09:24 -0400
+
+lightdm-login-chromiumos (1.1ubuntu7) trusty; urgency=medium
+
+  * commited the file properly this time
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 02:57:24 -0400
+
+lightdm-login-chromiumos (1.1ubuntu6) trusty; urgency=medium
+
+  * fixed the InitializeICU() failure by including an icudtl.dat from another chrome installation (for some reason the snapshots are missing a VITAL FILE)
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 02:44:32 -0400
+
+lightdm-login-chromiumos (1.1ubuntu5) trusty; urgency=medium
+
+  * changed make target names so dh doesn't throw a fit
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 02:13:24 -0400
+
+lightdm-login-chromiumos (1.1ubuntu4) trusty; urgency=medium
+
+  * maybe git-dch can properly guess my name now
+  * okay got the makefile right now I think
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 02:10:13 -0400
+
+lightdm-login-chromiumos (1.1ubuntu3) trusty; urgency=medium
+
+  [ frobthebuilder ]
+  * Integrated disable-setuid-sandbox fix
+
+  [ Frob ]
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 01:47:52 -0400
+
+lightdm-login-chromiumos (1.1ubuntu2) trusty; urgency=medium
+
+  [ = ]
+  * asdf changelog
+
+  [ frobthebuilder ]
+
+ -- frobthebuilder <ebanyash@gmail.com>  Tue, 09 Sep 2014 01:33:22 -0400
+
+lightdm-login-chromiumos (1.1ubuntu1) trusty; urgency=medium
+
+  [ Janez Troha ]
+  * Added simple example how to write services for network, plain mode, and boot mode
+
+  [ = ]
+  * changed maintainer so I can build
+
+  [ Frob ]
+
+ -- Frob <frob@frob-VirtualBox>  Tue, 09 Sep 2014 01:28:00 -0400
+
+lightdm-login-chromiumos (1.1) quantal; urgency=low
+
+  [ dz0ny ]
+  * Added boot mode, sample service impl
+
+ -- dz0ny <janez.troha@gmail.com>  Sun, 3 Feb 2013 02:11:02 +0100
+
+lightdm-login-chromiumos (1.0) quantal; urgency=low
+
+  [ dz0ny ]
+  * Initial release, fixing deb
+
+ -- dz0ny <janez.troha@gmail.com>  Sun, 11 Nov 2012 23:49:48 +0100

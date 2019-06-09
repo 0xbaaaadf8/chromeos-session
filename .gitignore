@@ -1,0 +1,4 @@
+debian/chromeos-desktop.debhelper.log
+/debian/chromeos-desktop
+/__pycache__
+**.pyc
