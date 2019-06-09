@@ -85,3 +85,9 @@ Google doesn't build 32-bit binaries.
 ## There's a "chromeos" directory in my home folder... why is that?
 
 This is where the Chromium binary stores data, such as Downloads. You can safely delete it if you've uninstalled this project.
+
+## Credits
+
+I would like to thank dz0zy for the original project ([https://github.com/dz0ny/lightdm-login-chromeos],) and I would like to thank frobthebuilder for forking and ironing out some errors. ([https://github.com/FrobtheBuilder/lightdm-login-chromeos])
+
+My thanks also go to JVApen for helping me to run the actual Chromium binaries, and figure out for myself why the project wouldn't work. ([http://chromiumosonlinux.blogspot.com/2015/12/getting-started-with-chromium-os.html])
