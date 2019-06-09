@@ -27,17 +27,12 @@ Additionally, this fork no longer downloads the lastest chromium builds; It down
 * Android apps (Missing container files)
 * Crostini (I'm considering making a replacement; see the "A crostini replacement?" section below for more details)
 * Crosh (but you can still have a shell via openSSH; see the "Get a shell with openSSH" section below for more details)
- 
-## Deprecated stuff (for now)
-
-* Booting directly to Chromium OS (The grub and init files are seven years old, and unmaintained)
-* The chromeos-dm and chromeos-plain scripts
-* Plugins (Adobe Flash, Icedtea, Google Talk)
 
 ### Odd behavior
 
 * If you resize the Chromium OS GUI window, the wallpaper will run amok. Applying a new wallpaper can help fix this.
 * Oddly enough, there were three more download folders in the default download folder, at least in my own virtual machine.
+
 
 ### A Crostini replacement?
 
@@ -47,6 +42,12 @@ I'm considering forking the crouton project [https://github.com/dnschneid/crouto
 
 Download the Secure Shell App in the Chromium OS GUI here: [https://chrome.google.com/webstore/detail/secure-shell-app/pnhechapfaindjhompbnflcldabbghjo?hl=en]
 Then, open it and login with your username, your computer's hostname, and your user account's password. Afterwards, you're good to go!
+
+## Deprecated stuff (for now)
+
+* Booting directly to Chromium OS (The grub and init files are seven years old, and unmaintained)
+* The chromeos-dm and chromeos-plain scripts
+* Plugins (Adobe Flash, Icedtea, Google Talk)
 
 ## Compatability with traditional GNU/Linux systems
 
