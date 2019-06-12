@@ -2,7 +2,7 @@
 
 Basically, this is lightdm-login-chromeos... reborn.
 
-This project is a fork of a fork of the now-archived lightdm-login-chromeos project: [https://github.com/FrobtheBuilder/lightdm-login-chromeos]
+This project is a fork of a fork of the now-archived lightdm-login-chromeos project: https://github.com/FrobtheBuilder/lightdm-login-chromeos
 
 I consider this project to be pre-release until I can get a binary from ArnoldTheBat's Chromium OS builds (https://arnoldthebat.co.uk/wordpress/chromium-os/) working, so that it can fix many of the issues listed below. 
 
@@ -37,11 +37,11 @@ Additionally, this fork no longer downloads the lastest chromium builds; It down
 
 ### A Crostini replacement?
 
-I'm considering about forking the crouton project [https://github.com/dnschneid/crouton] and using the xiwi target to bring traditional GNU/Linux programs to the Chromium OS GUI.
+I'm considering about forking the crouton project https://github.com/dnschneid/crouton and using the xiwi target to bring traditional GNU/Linux programs to the Chromium OS GUI.
  
 ### Get a shell with openSSH 
 
-Download the Secure Shell App in the Chromium OS GUI here: [https://chrome.google.com/webstore/detail/secure-shell-app/pnhechapfaindjhompbnflcldabbghjo?hl=en]
+Download the Secure Shell App in the Chromium OS GUI here: https://chrome.google.com/webstore/detail/secure-shell-app/pnhechapfaindjhompbnflcldabbghjo?hl=en
 Then, open it and login with your username, your computer's hostname, and your user account's password. Afterwards, you're good to go!
 
 ## Deprecated stuff (for now)
@@ -53,7 +53,7 @@ Then, open it and login with your username, your computer's hostname, and your u
 ## Compatability with traditional GNU/Linux systems
 
 The plan is to port most functionality from ChromeOS (picture import, volume control etc.) However, in order to do this, someone needs to write d-bus services (this is how the binary communicates with system). As I don't know a thing about d-bus, and trying to learn how to write said services, I'm leaving the example files alone.
-However, the prebuilt binaries have stubbed data (fake Wi-Fi networks, fake Bluetooth devices, fake sound outputs and inputs, and so on,) so I (probably) need to get the binaries from a Chromium OS build: [https://arnoldthebat.co.uk/wordpress/chromium-os/]
+However, the prebuilt binaries have stubbed data (fake Wi-Fi networks, fake Bluetooth devices, fake sound outputs and inputs, and so on,) so I (probably) need to get the binaries from a Chromium OS build: https://arnoldthebat.co.uk/wordpress/chromium-os/
 
 I've tried running the binaries from ArnoldTheBat's "Camd64OS_R74-11895.B-Vanilla" build, but these cause a segmentation fault, even with all the requested library files. I suspect it's because of various missing files (like not copying /usr/share/chromeos-assets.)
 The binary didn't want to give me a log, so I'm left with a binary with stubbed data for now.
@@ -89,6 +89,6 @@ This is where the Chromium binary stores data, such as Downloads. You can safely
 
 ## Credits
 
-I would like to thank dz0zy for the original project ([https://github.com/dz0ny/lightdm-login-chromeos],) and I would like to thank frobthebuilder for forking and ironing out some errors. ([https://github.com/FrobtheBuilder/lightdm-login-chromeos])
+I would like to thank dz0zy for the original project (https://github.com/dz0ny/lightdm-login-chromeos,) and I would like to thank frobthebuilder for forking and ironing out some errors. (https://github.com/FrobtheBuilder/lightdm-login-chromeos)
 
-My thanks also go to JVApen for helping me to run the actual Chromium binaries, and figure out for myself why the project wouldn't work. ([http://chromiumosonlinux.blogspot.com/2015/12/getting-started-with-chromium-os.html])
+My thanks also go to JVApen for helping me to run the actual Chromium binaries, and figure out for myself why the project wouldn't work. (http://chromiumosonlinux.blogspot.com/2015/12/getting-started-with-chromium-os.html)
