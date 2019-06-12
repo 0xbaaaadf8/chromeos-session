@@ -4,7 +4,7 @@ Basically, this is lightdm-login-chromeos... reborn.
 
 This project is a fork of a fork of the now-archived lightdm-login-chromeos project: [https://github.com/FrobtheBuilder/lightdm-login-chromeos]
 
-I consider this project to be pre-release until I can get (almost) all of the features working.
+I consider this project to be pre-release until I can get a binary from ArnoldTheBat's Chromium OS builds (https://arnoldthebat.co.uk/wordpress/chromium-os/) working, so that it can fix many of the issues listed below. 
 
 Additionally, this fork no longer downloads the lastest chromium builds; It downloads a stable-ish (probably beta) build.
 
@@ -53,7 +53,7 @@ Then, open it and login with your username, your computer's hostname, and your u
 ## Compatability with traditional GNU/Linux systems
 
 The plan is to port most functionality from ChromeOS (picture import, volume control etc.) However, in order to do this, someone needs to write d-bus services (this is how the binary communicates with system). As I don't know a thing about d-bus, and trying to learn how to write said services, I'm leaving the example files alone.
-However, I believe the prebuilt binaries have stubbed data (fake Wi-Fi networks, fake Bluetooth devices, fake sound outputs and inputs, and so on,) so I might need to get the binaries from a Chromium OS build: [https://arnoldthebat.co.uk/wordpress/chromium-os/]
+However, the prebuilt binaries have stubbed data (fake Wi-Fi networks, fake Bluetooth devices, fake sound outputs and inputs, and so on,) so I (probably) need to get the binaries from a Chromium OS build: [https://arnoldthebat.co.uk/wordpress/chromium-os/]
 
 I've tried running the binaries from ArnoldTheBat's "Camd64OS_R74-11895.B-Vanilla" build, but these cause a segmentation fault, even with all the requested library files. I suspect it's because of various missing files (like not copying /usr/share/chromeos-assets.)
 The binary didn't want to give me a log, so I'm left with a binary with stubbed data for now.
