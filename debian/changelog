@@ -2,7 +2,7 @@ chromeos-desktop (1.1ubnutu19) disco; urgency=medium
 
   * Updated the postinst script to download Chromium 77.0.3865.93
   
- -- NoodleFork <noodlesoupandshell@gmail.com>  Sat, 24 Sep 2019 22:12:40 -0500
+ -- NoodleFork <noodlesoupandshell@gmail.com>  Tue, 24 Sep 2019 22:12:40 -0500
  
 chromeos-desktop (1.1ubnutu19) disco; urgency=medium
 
