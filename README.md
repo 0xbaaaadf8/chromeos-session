@@ -6,7 +6,7 @@ This project is a fork of a fork of the now-archived lightdm-login-chromeos proj
 
 I consider this project to be pre-release until I can get a binary from ArnoldTheBat's Chromium OS builds (https://arnoldthebat.co.uk/wordpress/chromium-os/) working, so that it can fix many of the issues listed below. 
 
-Additionally, this fork no longer downloads the lastest chromium builds; It downloads a stable-ish (probably beta) build.
+Additionally, this fork no longer downloads the lastest chromium builds; It downloads a stable build. I'll change this decision if it turns out to be a problem.
 
 ## Warning - DO NOT use the lock function in the Chromium OS GUI! Anybody can sign in, even if they don't know the password of PIN that you set! See the "What doesn't work" section of this README for more details.
 
