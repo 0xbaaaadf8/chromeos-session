@@ -3,7 +3,7 @@ Section: web
 Priority: optional
 Maintainer: NoodleFork <noodlesoupandshell@gmail.com>
 Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 83.0.0
+Standards-Version: 86.0.0
 Homepage: https://github.com/NoodleFork/chromeos-desktop
 
 Package: chromeos-desktop
