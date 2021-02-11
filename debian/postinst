@@ -20,7 +20,7 @@ set -e
 
 case "$1" in
     configure)
-      BASE=800218
+      BASE=827102
       URL="http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_ChromiumOS_Full/${BASE}/chrome-chromeos.zip"
       ZIPFILE=$(tempfile)
       curl -z "${ZIPFILE}.zip" -o "${ZIPFILE}.zip" -L "$URL"
