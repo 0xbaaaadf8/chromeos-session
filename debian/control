@@ -1,13 +1,13 @@
 Source: chromeos-desktop
 Section: web
 Priority: optional
-Maintainer: NoodleFork <noodlesoupandshell@gmail.com>
+Maintainer: branchBreaker <noodlesoupandshell@gmail.com>
 Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 86.0.0
+Standards-Version: 88.0.0
 Homepage: https://github.com/NoodleFork/chromeos-desktop
 
 Package: chromeos-desktop
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, matchbox-window-manager, curl, python3, python3-dbus
+Depends: ${shlibs:Depends}, ${misc:Depends}, matchbox-window-manager, curl
 Recommends: fonts-roboto, openssh-server
 Description: This package installs the Chromium OS user interface as an application and a desktop environment.
