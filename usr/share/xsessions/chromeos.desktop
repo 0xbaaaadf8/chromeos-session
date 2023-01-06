@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Chromium OS
-Comment=This session will start the Chromium OS GUI.
+Comment=Starts the Chromium OS GUI as a desktop environment.
 Exec=chromeos
 TryExec=chromeos
 Type=XSession
