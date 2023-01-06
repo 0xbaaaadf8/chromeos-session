@@ -1,10 +1,12 @@
 # chromeos-session
 
+## This project isn't abandoned (yet,) but it's still not done.
+
 ## Please read this file carefully before using this! Many features are not present or are not working properly. Do not use the lock function, as anybody can type in something random to get in. Additionally, do not store any sensitive data on the Chromium OS environment.
 
 In layman's terms, this is [lightdm-login-chromeos](https://github.com/dz0ny/lightdm-login-chromeos) updated.
 
-As I'm dumb when in comes to the internals of Chromium OS, I consider this to be pre-release until I gain more experience with it.
+As I'm clueless when in comes to the internals of Chromium OS, I consider this to be pre-release until I gain more experience with it.
 
 Additionally, this fork no longer downloads the lastest Chromium builds; It downloads a build that is stable (or a beta build that is fairly close to stable.) This change was made because the latest versions might bring some changes which prevent the build from running properly. I'll revert my decision when this becomes a problem.
 
@@ -14,7 +16,7 @@ This project will install the GUI of Chromium OS on "traditional" GNU/Linux syte
 
 ## What does this package install?
 
-When you install this pacakge, a script is run that downloads a stable version of the Chromium browser as a zip archive. However, it has a special twist; It's a build of chromium for Chromium OS, which means it contains the GUI you'll see on Chromebooks (and the like.) Once the package has been downloaded, it is extracted into /opt/chromeos. This is where the Chrome browser resides on a Chromebook (and again, the like.) As of writing, three more files are extracted: A script extracted to /usr/bin, an xsesison (desktop environment) file extracted to /usr/share/xsessions, and a application file extracted to /usr/share/applications. The first is what gets the Chromium binary properly started for use, and it can be executed by the terminal. The second allows the Chromium binary to function as a desktop environment (albeit with a lot of problems,) and the third enables starting the Chromium binary from common desktop environments.
+When you install this pacakge, a script is run that downloads the last known good revision of the Chromium browser as a zip archive. However, it has a special twist; It's a build of Chromium for Chromium OS, which means it contains the GUI you'll see on Chromebooks (and the like.) Once the package has been downloaded, it is extracted into /opt/chromeos. This is where the Chrome browser resides on a Chromebook (and again, the like.) As of writing, three more files are extracted: A script extracted to /usr/bin, an xsesison (desktop environment) file extracted to /usr/share/xsessions, and a application file extracted to /usr/share/applications. The first is what gets the Chromium binary properly started for use, and it can be executed by a user via a terminal. The second allows the Chromium binary to function as a desktop environment (albeit with a lot of problems,) and the third enables starting the Chromium binary from common desktop environments.
 
 ## There's a "chromeos" directory in my home folder... why is that?
 
@@ -22,7 +24,7 @@ This is where the Chromium binary stores data, such as Downloads. You can safely
 
 ## How do I update the Chromium binary?
 
-Just install a new version of the package.
+Just reconfigure or reinstall the package.
 
 ## What is working properly?
  
@@ -30,22 +32,22 @@ Just install a new version of the package.
 
 ## What features aren't working properly?
 
-* Setting up the lock screen (Anybody can log in with a random password or PIN when you use the lock function; use "continue where you left off" and close the browser instead!)
+* Setting up the lock screen (Anybody can log in with a random password or PIN when you use the lock function; don't be tempted to use it when you're using Chromium OS as a desktop environment!)
 * Accessing other disks (A problem with the build downloaded)
 * Controlling sound volume, networks, and various other system-related stuff (again, this has to do with the build downloaded)
-* Using the shutdown button or restarting from the Chromium OS GUI (It behaves just like the Sign Out button)
+* Using the shutdown button or restarting from the Chromium OS GUI (It behaves just like the Sign Out button on real Chrome OS devices)
 * Using chrome://flags (It'll appear as working when you select flags to enable, but it wont. The only way to use flags is to modify the chromeos script for now.)
-* Automatic Updates (Checking and updating feels smooth, but once you log out, it's still on the same Chromium version. Install a new version of this package or modify the postinst script to get another version.)
+* Automatic Updates (Checking and updating feels smooth, but once you log out, it's still on the same Chromium version. Install or reconfigure this package to get another version.)
 * Dictation & Select to speak
 * Adobe Flash (But it shouldn't matter, as Adobe has killed it)
 * Widevine... No protected content for now.
 * Android apps (Missing ARC container)
-* Crostini (This is not a high priority, as you probably are able to do what crostini offers already)
-* Crosh (You can still have a shell via openSSH; see the "Get a shell with openSSH" section below for more details)
+* Crostini (This is not a high priority, as you probably are able to do what Crostini offers already)
+* Crosh (You can still have a shell via OpenSSH; see the "Get a shell with OpenSSH" section below for more details)
 
 ### Get a shell with openSSH 
 
-First, install openSSH if it wasn't installed.
+First, install OpenSSH if it wasn't installed.
 Next, download the Secure Shell App in the Chromium OS GUI here: https://chrome.google.com/webstore/detail/secure-shell-app/pnhechapfaindjhompbnflcldabbghjo?hl=en
 Then, open it and login with your username, your computer's hostname, and your user account's password. Afterwards, you're good to go!
 
@@ -58,7 +60,7 @@ Then, open it and login with your username, your computer's hostname, and your u
 
 * Booting directly to Chromium OS (The grub and init files are seven years old, and unmaintained.)
 * The chromeos-dm and chromeos-plain scripts
-* Plugins like Adobe Flash, Icedtea, Google Talk
+* Plugins like Adobe Flash, Icedtea, Google Talk (They are all dead)
 
 ## Compatability with the host GNU/Linux system
 
@@ -83,11 +85,6 @@ Before you begin, you must have a GNU/Linux distribution with dpkg such as Debia
 Note that building the package will result in some warnings (and some errors if you omit some of the modifiers,) but they usually can be ignored.
 Also, you will not only generate the .deb package, but you will also build tar archives and other stuff. Those can be safely removed.
 
-## A list of GNU/Linux distributions that were tested
-All distributions listed here are in amd64 variations.
-
-* Ubuntu MATE 19.04
- 
 ## Why does the project only support the amd64/x86_64 architecture?
 
 Google doesn't build 32-bit binaries.
