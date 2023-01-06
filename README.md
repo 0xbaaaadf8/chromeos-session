@@ -1,6 +1,6 @@
 # chromeos-session
 
-## This project isn't abandoned (yet,) but it's still not done.
+## This project isn't abandoned (yet,) but it's still not done. I'm currently finding another method to get the Chromium OS experience on traditional GNU/Linux distros.
 
 ## Please read this file carefully before using this! Many features are not present or are not working properly. Do not use the lock function, as anybody can type in something random to get in. Additionally, do not store any sensitive data on the Chromium OS environment.
 
