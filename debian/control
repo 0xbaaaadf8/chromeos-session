@@ -8,6 +8,6 @@ Homepage: https://github.com/NoodleFork/chromeos-desktop
 
 Package: chromeos-desktop
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, matchbox-window-manager, curl
+Depends: ${shlibs:Depends}, ${misc:Depends}, matchbox-window-manager, curl, libxkbcommon0, libgles2, libegl1
 Recommends: fonts-roboto, openssh-server
 Description: This package installs the Chromium OS user interface as an application and a desktop environment.
