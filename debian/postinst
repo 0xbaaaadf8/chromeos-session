@@ -20,17 +20,17 @@ set -e
 
 case "$1" in
     configure)
-      BASE=827102
-      URL="http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_ChromiumOS_Full/${BASE}/chrome-chromeos.zip"
+      LKGR=$(curl http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_ChromiumOS_Full/LAST_CHANGE)
+      URL="http://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_ChromiumOS_Full/${LKGR}/chrome-chromeos.zip"
       ZIPFILE=$(tempfile)
       curl -z "${ZIPFILE}.zip" -o "${ZIPFILE}.zip" -L "$URL"
       unzip "${ZIPFILE}.zip" -d "/opt/google"
       rm -rf /opt/google/chromeos
-	  mv /opt/google/chrome-chromeos /opt/google/chromeos
+      mv /opt/google/chrome-chromeos /opt/google/chromeos
       chmod 775 /opt/google/chromeos -R
       chown root:root /usr/bin/chromeos
       chown root:root /usr/share/xsessions/chromeos.desktop
-	  chown root:root /usr/share/applications/chromeos.desktop
+      chown root:root /usr/share/applications/chromeos.desktop
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
