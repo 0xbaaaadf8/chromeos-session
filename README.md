@@ -45,7 +45,7 @@ Just reconfigure or reinstall the package.
 * Crostini (This is not a high priority, as you probably are able to do what Crostini offers already)
 * Crosh (You can still have a shell via OpenSSH; see the "Get a shell with OpenSSH" section below for more details)
 
-### Get a shell with openSSH 
+### Get a shell with OpenSSH 
 
 First, install OpenSSH if it wasn't installed.
 Next, download the Secure Shell App in the Chromium OS GUI here: https://chrome.google.com/webstore/detail/secure-shell-app/pnhechapfaindjhompbnflcldabbghjo?hl=en
@@ -73,7 +73,7 @@ The binary didn't want to give me a log, so I'm left with a binary with stubbed 
 
 1. Clone this repository
 2. Change directory into this project, and then into ./debian
-3. Open the "postinst" file and look for a variable named "BASE". Next to it is a number; change it to the base position that you want.
+3. Open the "postinst" file and look for a variable named "LKGR". Change it to a revision you'd like (and be careful as older revisions might not work.)
 4. Save it, change directory to "..", and then follow the build instructions below, jumping to part 3.
 
 ## How do I build this package myself?
