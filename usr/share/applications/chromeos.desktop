@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Chromium OS
-Comment=This app will start the Chromium OS GUI.
+Comment=Starts the Chromium OS GUI as an application.
 Exec=chromeos
 TryExec=chromeos
 Icon=/opt/google/chromeos/product_logo_48.png
