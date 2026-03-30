@@ -1,22 +1,16 @@
 # chromeos-session
 
-## This project isn't abandoned (yet,) but it's still not done. I'm currently finding another method to get the Chromium OS experience on traditional GNU/Linux distros.
+## This project is rarely updated. Please read this file carefully before using this! Many features are not present or are not working properly. Do not use the lock function, as anybody can type in something random to get in. Additionally, do not store any sensitive data on the Chromium OS environment.
 
-## Please read this file carefully before using this! Many features are not present or are not working properly. Do not use the lock function, as anybody can type in something random to get in. Additionally, do not store any sensitive data on the Chromium OS environment.
-
-In layman's terms, this is [lightdm-login-chromeos](https://github.com/dz0ny/lightdm-login-chromeos) updated.
-
-As I'm clueless when in comes to the internals of Chromium OS, I consider this to be pre-release until I gain more experience with it.
-
-Additionally, this fork no longer downloads the lastest Chromium builds; It downloads a build that is stable (or a beta build that is fairly close to stable.) This change was made because the latest versions might bring some changes which prevent the build from running properly. I'll revert my decision when this becomes a problem.
+In layman's terms, this is [lightdm-login-chromeos](https://github.com/dz0ny/lightdm-login-chromeos) updated. As I'm still not familiar with the internals of the Chromium OS user interface, this fork doesn't feature substantial quality-of-life improvements over the original (other than the fact that Chromium is supposed to launch).
 
 ## What does this package do, exactly?
 
-This project will install the GUI of Chromium OS on "traditional" GNU/Linux sytems, allowing you to get a basic and (very) rough experience of what Chromium OS (and Chrome OS) feels like (with a lot of missing features.) I'm saying "traditional" because Chromium OS is quite different than most GNU/Linux distributions (Ubuntu, Debian, PureOS, Fedora, openSUSE, etc.)
+This project will install the GUI of Chromium OS on "traditional" GNU/Linux sytems, allowing you to get a basic and very rough experience of what Chromium OS (and Chrome OS) feels like (with a lot of missing features.) I'm saying "traditional" because Chromium OS is quite different than most GNU/Linux distributions (Ubuntu, Debian, Linux Mint, Fedora, openSUSE, Arch Linux, etc.)
 
 ## What does this package install?
 
-When you install this pacakge, a script is run that downloads the last known good revision of the Chromium browser as a zip archive. However, it has a special twist; It's a build of Chromium for Chromium OS, which means it contains the GUI you'll see on Chromebooks (and the like.) Once the package has been downloaded, it is extracted into /opt/chromeos. This is where the Chrome browser resides on a Chromebook (and again, the like.) As of writing, three more files are extracted: A script extracted to /usr/bin, an xsesison (desktop environment) file extracted to /usr/share/xsessions, and a application file extracted to /usr/share/applications. The first is what gets the Chromium binary properly started for use, and it can be executed by a user via a terminal. The second allows the Chromium binary to function as a desktop environment (albeit with a lot of problems,) and the third enables starting the Chromium binary from common desktop environments.
+When you install this pacakge, a script is run that downloads the last known good revision of the Chromium browser as a zip archive. However, it has a special twist; It's a build of Chromium for Chromium OS, which means it contains the GUI you'll see on Chromebooks (and the like). Once the package has been downloaded, it is extracted into /opt/chromeos. This is where the Chrome browser resides on a Chromebook (and again, the like). As of writing, three more files are extracted: A script extracted to /usr/bin, an xsesison (desktop environment) file extracted to /usr/share/xsessions, and a application file extracted to /usr/share/applications. The first is what gets the Chromium binary properly started for use, and it can be executed by a user via a terminal. The second allows the Chromium binary to function as a desktop environment (albeit with a lot of problems,) and the third enables starting the Chromium binary from common desktop environments.
 
 ## There's a "chromeos" directory in my home folder... why is that?
 
@@ -37,11 +31,11 @@ Just reconfigure or reinstall the package.
 * Controlling sound volume, networks, and various other system-related stuff (again, this has to do with the build downloaded)
 * Using the shutdown button or restarting from the Chromium OS GUI (It behaves just like the Sign Out button on real Chrome OS devices)
 * Using chrome://flags (It'll appear as working when you select flags to enable, but it wont. The only way to use flags is to modify the chromeos script for now.)
-* Automatic Updates (Checking and updating feels smooth, but once you log out, it's still on the same Chromium version. Install or reconfigure this package to get another version.)
+* Automatic Updates (Checking and updating feels smooth, but once you log out, it's still on the same Chromium version. Install or reconfigure this package to get a later version.)
 * Dictation & Select to speak
 * Adobe Flash (But it shouldn't matter, as Adobe has killed it)
-* Widevine... No protected content for now.
-* Android apps (Missing ARC container)
+* Widevine... Not even L3. No protected content for now.
+* Android apps (Missing Android container)
 * Crostini (This is not a high priority, as you probably are able to do what Crostini offers already)
 * Crosh (You can still have a shell via OpenSSH; see the "Get a shell with OpenSSH" section below for more details)
 
